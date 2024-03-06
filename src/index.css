@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Roboto Mono", Menlo, monospace, serif;
+  background-color: #f8f7f4;
+  color: #131B00;
+}
+
+@layer components {
+  .in-btn {
+    @apply h-12 flex justify-center items-center space-x-2 py-2 px-4 rounded-lg hover:bg-opacity-95 cursor-pointer
+  }
+  .in-icon-btn {
+    @apply flex justify-center items-center py-2 px-2 rounded-lg hover:bg-opacity-95 cursor-pointer
+  }
+
+  .in-btn-small, .in-input-small{
+    @apply w-fit h-9 text-sm
+  }
+  .in-btn-medium, .in-input-medium{
+    @apply w-fit h-10
+  }
+  .in-btn-large, .in-input-large{
+    @apply w-fit h-12 text-lg
+  }
+
+  .in-btn-primary{
+    @apply bg-primary-500 text-[#f8f7f4] border-primary-500 hover:bg-primary-600
+  }
+
+  .in-btn-secondary{
+    @apply bg-transparent text-primary-500 border-[1px] border-primary-500 hover:bg-primary-500 hover:text-[#f8f7f4]
+  }
+
+  .in-btn-icon{
+    @apply bg-transparent text-primary-500 rounded-full hover:bg-customGray-200/20
+  }
+
+  .in-icon-btn-small{
+    @apply w-9 h-9 text-sm
+  }
+  .in-icon-btn-medium{
+    @apply w-10 h-10
+  }
+  .in-icon-btn-large{
+    @apply w-12 h-12 text-lg
+  }
+  .in-input {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3
+  }
+  .in-input {
+    @apply shrink appearance-none;
+    @apply h-12 px-4 text-sm leading-loose;
+  }
+  .preview{
+    @apply w-full object-cover
+  }
+  input.in-input[type="number"]::-webkit-outer-spin-button,
+  input.in-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+.ReactQueryDevtools{
+  display: none;
+}
