@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        navyblue: {
+        primary: {
           50: '#e5eaf0',
           100: '#b3bdd3',
           200: '#8082b7',
@@ -16,7 +16,7 @@ export default {
           800: '#0d1d3f',
           900: '#0a162f',
         },
-        blue: {
+        secondary: {
           50: '#f0f5fc',
           100: '#d0e2fb',
           200: '#a1c5f7',
@@ -28,7 +28,19 @@ export default {
           800: '#123366',
           900: '#0f2952',
         },
-        gray: {
+        customBlue: {
+          50: '#f0f5fc',
+          100: '#d0e2fb',
+          200: '#a1c5f7',
+          300: '#72a8f3',
+          400: '#448aee',
+          500: '#1e56a0', 
+          600: '#1a4c90',
+          700: '#17407b',
+          800: '#123366',
+          900: '#0f2952',
+        },
+        customGray: {
           '50': '#F2F7FC',
           '100': '#E5EFF8',
           '200': '#CBDFF0',
