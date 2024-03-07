@@ -10,7 +10,8 @@ import image from "./../assets/image/image.jpg"
 import { useNavigate } from "react-router-dom"
 import { SuggestionList } from "../components/list/suggestion.list"
 import { PostList } from "../components/list/post.list"
-import { postList } from "../constant/data"
+import { mentors, postList } from "../constant/data"
+import { MentorList } from "../components/list/mentor.list"
 
 export const BlogPage = () => {
     const navigate = useNavigate()
@@ -52,9 +53,15 @@ export const BlogPage = () => {
                     </ul>
                 </div>
                 <Divider style="after:bg-customGray-300/5 before:bg-customGray-300/5"/>
-                <div className="flex flex-col space-y-7">
-                    <h1 className="text-customBlue-800 text-lg">Suggestion d'amis</h1>
-                    <SuggestionList/>
+                <div className="flex flex-col space-y-8">
+                    <div className="flex flex-col space-y-7">
+                        <h1 className="text-customBlue-800 text-lg">Suggestion de mentor</h1>
+                        <MentorList mentorList={mentors}/>
+                    </div>
+                    <div className="flex flex-col space-y-7">
+                        <h1 className="text-customBlue-800 text-lg">Suggestion d'amis</h1>
+                        <SuggestionList/>
+                    </div>
                 </div>
             </div>
         </div>

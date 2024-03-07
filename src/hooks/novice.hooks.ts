@@ -7,3 +7,9 @@ export const useNoviceSuggestion=(matricule:string)=>{
         queryFn: ()=>noviceService.getNoviceWithSimilarInterest(matricule)
     })
 }
+export const useFetchNoviceByMatriule=(matricule:string)=>{
+    return useQuery({
+        queryKey: ['novice', matricule],
+        queryFn: ()=>noviceService.getNoviceByMatricule(matricule)
+    })
+}

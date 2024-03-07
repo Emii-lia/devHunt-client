@@ -3,6 +3,7 @@ import { MainLayout } from "../components/layout/pageLayout/main.layout";
 import { LandingPage } from "../pages/landing.page";
 import { BlogLayout } from "../components/layout/pageLayout/blog.layout";
 import { BlogPage } from "../pages/blog.page";
+import { ProfileRoute } from "./profile.routes";
 
 export const protectedRoutes:RouteObject[]= [
     {
@@ -24,5 +25,9 @@ export const protectedRoutes:RouteObject[]= [
                 element:<BlogPage/>
             }
         ]
+    },
+    {
+        path:"profile/*",
+        element:<ProfileRoute/>,
     }
 ]
