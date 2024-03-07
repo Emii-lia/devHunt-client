@@ -1,6 +1,6 @@
 import { IUser } from "../../types/user.types"
 import Avatar from "../userProfile/components/avatar/avatar"
-import image from "../../assets/image/100790.png"
+import image from "../../assets/icon/avatar1.svg"
 import wave from './../../assets/wave-min.svg'
 import { useNavigate } from "react-router-dom"
 

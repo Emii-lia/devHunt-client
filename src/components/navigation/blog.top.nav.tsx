@@ -1,6 +1,6 @@
 import { app_name } from "../../constant/app"
 import { IUser } from "../../types/user.types"
-import image from "../../assets/image/100790.png"
+import image from "../../assets/icon/avatar1.svg"
 import Avatar from "../userProfile/components/avatar/avatar"
 import { InputField } from "../input"
 import { FaSearch } from "react-icons/fa"

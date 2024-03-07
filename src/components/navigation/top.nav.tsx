@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react"
 import { UserInfo } from "../userProfile/components/card/user.info.card"
-import { UserContext } from "../../providers/user.provider"
+// import { UserContext } from "../../providers/user.provider"
 import { FaChevronDown } from "react-icons/fa6"
 import { IUser } from "../../types/user.types"
-import image from "../../assets/image/100790.png"
+import image from "../../assets/icon/avatar1.svg"
 import { app_name } from "../../constant/app"
 import { Dropdown } from "../dropdown/dropdown"
 

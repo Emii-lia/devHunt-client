@@ -10,7 +10,7 @@ export const navRoutes:INavRoute[] = [
         label: "Information",
     },
     {
-        path:"/news",
+        path:"/blog",
         label: "Blog",
     },
 
