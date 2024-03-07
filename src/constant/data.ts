@@ -1,3 +1,4 @@
+import { IPart } from "../types/card.type";
 import { IPost } from "../types/post.types";
 import { IMentor } from "../types/user.types";
 
@@ -70,7 +71,6 @@ export const mentors:IMentor[]=[
         contact2:"John Smith",
         contact3:"jsmith",
         description:"John Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe",
-        successStory:"Story successfully created successfully with success message and success message description and success message description description and success message description",
         specialisation:
             {
                 label:"System Administrator",
@@ -88,11 +88,48 @@ export const mentors:IMentor[]=[
         contact2:"Li Nie",
         contact3:"nie_li",
         description:"John Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe Doe",
-        successStory:"Story successfully created successfully with success message and success message description and success message description description and success message description",
         specialisation:
             {
                 label:"Cybersecurity",
                 description:"Cybersecurity is... I don't know",
             }
+    },
+]
+export const partList:IPart[] = [
+    {
+        imageUrl:"/src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/Ambatovy-150x150.jpg",
+        title:"Ambatovy"
+    },
+    {
+        imageUrl:"src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/AUF-150x150.jpg",
+        title:"AUF-"
+    },
+    {
+        imageUrl:"src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/axian-logo-1-150x150.png",
+        title:"axian"
+    },
+    {
+        imageUrl:"src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/Bianco-150x150.jpg",
+        title:"Bianco"
+    },
+    {
+        imageUrl:"src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/BNGRC-150x150.jpg",
+        title:"BNGRC"
+    },
+    {
+        imageUrl:"src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/Hello-Tana-150x150.jpg",
+        title:"Hello-Tana"
+    },
+    {
+        imageUrl:"src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/INSTAT-150x150.jpg",
+        title:"INSTAT"
+    },
+    {
+        imageUrl:"src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/MESUPRES-150x150.jpg",
+        title:"MESUPRES"
+    },
+    {
+        imageUrl:"src/assets/image/assets_devhunt/OFFICIAL_SPONSORING/Relia-150x150.jpg",
+        title:"Relia"
     },
 ]

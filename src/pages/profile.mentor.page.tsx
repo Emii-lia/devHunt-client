@@ -92,7 +92,7 @@ export const ProfileMentorPage = () => {
                       <h2 className="text-2xl ">A propos de moi</h2>
                       <p className="text-customGray-300 ">{user.description}</p>
                     </div>
-                  } child2={
+                  } child3={
                     <div className="space-y-4 shadow-lg p-6 rounded-xl bg-primary-100">
                           <h2 className="text-2xl">Experience</h2>
                           <div className="space-x-3 space-y-3">
@@ -102,7 +102,7 @@ export const ProfileMentorPage = () => {
                             }
                           </div>
                       </div>
-                  } child3={
+                  } child2={
                     <div className="space-y-4 shadow-lg p-6 rounded-xl bg-primary-100">
                         <h2 className="text-2xl ">Specialisation</h2>
                         <div className="">

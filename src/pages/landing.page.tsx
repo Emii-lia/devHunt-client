@@ -6,6 +6,8 @@ import { Button } from "../components/button"
 import { FullCard } from "../components/card/full.card"
 import { useNavigate } from "react-router-dom"
 import { Footer } from "../components/footer/footer"
+import { Carousel } from "../components/carousel/carousel"
+import {partList} from "../constant/data.ts"
 
 export const LandingPage = () => {
     const navigate = useNavigate()
@@ -27,6 +29,10 @@ export const LandingPage = () => {
                         <Button label="Explorer" onClick={()=>navigate("/blog")} type="button" variant="primary"/>
                     </div>
             </FullCard>
+            <div className="flex flex-col items-center pt-10">
+                <h1 className="text-3xl text-primary-700/80">Nos partenariats</h1>
+                <Carousel partList={partList}/>
+            </div>
             {/* <Divider/> */}
             <Footer/>
             {/* <PreviewCard/>
