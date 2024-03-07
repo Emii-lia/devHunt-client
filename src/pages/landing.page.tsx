@@ -6,7 +6,6 @@ import { Button } from "../components/button"
 import { FullCard } from "../components/card/full.card"
 import { useNavigate } from "react-router-dom"
 import { Footer } from "../components/footer/footer"
-import { Divider } from "../components/layout"
 
 export const LandingPage = () => {
     const navigate = useNavigate()
