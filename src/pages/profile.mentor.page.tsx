@@ -4,7 +4,7 @@ import Avatar from "../components/userProfile/components/avatar/avatar"
 import { Badge } from "../components/badge"
 import { FaFacebook, FaGithub, FaLinkedin, FaMessage, FaX } from "react-icons/fa6"
 import { IMentor, INovice, ISuccessStory } from "../types/user.types"
-import avatar from "./../assets/image/dio.jpg"
+import avatar from "./../assets/icon/avatar2.svg"
 import image from "../assets/image/code.jpg"
 import { PostCard } from "../components/card/post.card"
 import { IPost } from "../types/post.types"
@@ -23,11 +23,11 @@ export const ProfileMentorPage = () => {
       contact1:"John Doe",
       contact2:"John Doe",
       contact3:"john_doe",
-      description:"John Doe and Doe Doe are the same profile image with different attributes and different attributes for different users and organizations",
+      description:"Daniel, a natural tinkerer, always found computers fascinating. Despite initial struggles with complex theories, he persevered, joining coding clubs and attending industry workshops. He even started a Youtube channel explaining tech concepts in a clear, engaging way. Now, not only did he land his dream job at a cybersecurity firm, but his channel inspires countless aspiring IT students, proving that passion and hard work can bridge any knowledge gap.",
       successStory:{
         createdAt:new Date(),
         reactionCount:10,
-        description:"John Doe and Doe Doe are the same profile image with different attributes and different attributes for different users and organizations and organizations",
+        description:"Daniel, a natural tinkerer, always found computers fascinating. Despite initial struggles with complex theories, he persevered, joining coding clubs and attending industry workshops. He even started a Youtube channel explaining tech concepts in a clear, engaging way. Now, not only did he land his dream job at a cybersecurity firm, but his channel inspires countless aspiring IT students, proving that passion and hard work can bridge any knowledge gap.",
         media:image,
       },
       specialisation:{

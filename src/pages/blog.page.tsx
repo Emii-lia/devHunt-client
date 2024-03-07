@@ -24,11 +24,24 @@ export const BlogPage = () => {
                     <Model/>
                     <CardBody>
                         <CardBodyTitle>
-                            Title
+                            Azus ROG zephyrus G15   
                         </CardBodyTitle>
-                        <p className='text-customGray-400/80'>Molestias tempore fuga aspernatur animi, eos cupiditate perspiciatis minima obcaecati debitis?</p>
+                        <div className='text-customGray-600/80'>
+                            <p>
+                                <span className="font-semibold">CPU: </span>
+                                AMD Ryzen 9 5900HS
+                            </p>
+                            <p>
+                                <span className="font-semibold">GPU: </span>
+                                Nvidia RTX 3080
+                            </p>
+                            <p>
+                                <span className="font-semibold">SSD: </span>
+                                2TB
+                            </p>
+                        </div>
                         <CardActions>
-                            <Button label='View' onClick={()=>console.log("")} type='button' variant='primary'/>
+                            <Button label='Voir' onClick={()=>console.log("")} type='button' variant='primary'/>
                         </CardActions>
                     </CardBody>
                 </Card>

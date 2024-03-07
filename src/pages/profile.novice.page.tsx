@@ -5,7 +5,7 @@ import { INovice, IPassion } from "../types/user.types"
 import Avatar from "../components/userProfile/components/avatar/avatar"
 import { Badge } from "../components/badge"
 import { FaFacebook, FaGithub, FaLinkedin, FaX } from "react-icons/fa6"
-import image from '../assets/image/100790.png'
+import image from '../assets/icon/avatar1.svg'
 import { Timeline } from "../components/timeline"
 
 export const ProfileNovicePage = () => {
