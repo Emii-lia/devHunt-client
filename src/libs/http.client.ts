@@ -1,11 +1,4 @@
 import axios, {AxiosInstance, AxiosRequestConfig, AxiosResponse} from "axios";
-// import { localStorageService } from "../service/local_storage.service";
-// import { Params } from "../utils/params";
-
-//import * as process from "process";
-
-
-
 
 export  class HttpClient {
     private static  client(): AxiosInstance {
@@ -14,10 +7,6 @@ export  class HttpClient {
         }
         let axiosInstance = axios.create(axiosConfig)
         axiosInstance.interceptors.request.use((config) => {
-            //  const accessToken: string | null = localStorageService.getItem(Params.KEY_ACCESS_TOKEN)
-            // if (accessToken) {
-            //     config.headers.Authorization = `Bearer ${accessToken}`;
-            // }
             if (config.headers['Content-Type'] === 'multipart/form-data') {
                 config.headers['ContentType'] = 'multipart/form-data';
             }
