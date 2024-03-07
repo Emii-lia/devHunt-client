@@ -12,15 +12,16 @@ import { SuggestionList } from "../components/list/suggestion.list"
 import { PostList } from "../components/list/post.list"
 import { mentors, postList } from "../constant/data"
 import { MentorList } from "../components/list/mentor.list"
+import Model from "../components/ar-vr/Model"
 
 export const BlogPage = () => {
     const navigate = useNavigate()
     return (
         <div className="flex flex-row max-h-screen overflow-hidden">
-            <div className="w-1/5 p-6 pr-0 flex flex-col space-y-8 items-center max-h-screen overflow-hidden">
+            <div className="flex flex-col items-center w-1/5 max-h-screen p-6 pr-0 space-y-8 overflow-hidden max-md-4/5">
                 <ProfileCard/>
                 <Card shadow='lg' style="rounded-lg w-11/12">
-                    <CardHeader imageUrl={image}/>
+                    <Model/>
                     <CardBody>
                         <CardBodyTitle>
                             Title
@@ -33,15 +34,15 @@ export const BlogPage = () => {
                 </Card>
             </div>
             <Divider style="divider-horizontal max-h-screen overflow-hidden"/>
-            <div className="w-3/5 flex flex-col items-center pt-8 pb-24 overflow-scroll">
+            <div className="flex flex-col items-center w-3/5 pt-8 pb-24 overflow-scroll">
                 <PostButton style="rounded-full w-1/2"/>
                 <PostList postList={postList}/>
             </div>
-            <Divider style="divider-horizontal max-h-screen overflow-hidden"/>
-            <div className="w-1/4 p-0 pt-6 max-h-screen overflow-hidden">
+            <Divider style="divider-horizontal max-h-screen overflow-hidden max-md:hidden"/>
+            <div className="w-1/4 max-h-screen p-0 pt-6 overflow-hidden max-md:hidden">
                 <div className="cursor-pointer" onClick={()=>navigate("/info/it")}>
-                    <h1 className="text-customBlue-800 text-lg">Lecons</h1>
-                    <ul className="flex flex-col space-y-3 p-6">
+                    <h1 className="text-lg text-customBlue-800">Lecons</h1>
+                    <ul className="flex flex-col p-6 space-y-3">
                         {
                             tipsRoutes.map((tip:ITipsRoute, index:number)=>(
                                 <li className="flex flex-row items-center space-x-2 text-customGray-300" key={index}>
@@ -55,11 +56,11 @@ export const BlogPage = () => {
                 <Divider style="after:bg-customGray-300/5 before:bg-customGray-300/5"/>
                 <div className="flex flex-col space-y-8">
                     <div className="flex flex-col space-y-7">
-                        <h1 className="text-customBlue-800 text-lg">Suggestion de mentor</h1>
+                        <h1 className="text-lg text-customBlue-800">Suggestion de mentor</h1>
                         <MentorList mentorList={mentors}/>
                     </div>
                     <div className="flex flex-col space-y-7">
-                        <h1 className="text-customBlue-800 text-lg">Suggestion d'amis</h1>
+                        <h1 className="text-lg text-customBlue-800">Suggestion d'amis</h1>
                         <SuggestionList/>
                     </div>
                 </div>
