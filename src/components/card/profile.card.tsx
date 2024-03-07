@@ -2,9 +2,11 @@ import { IUser } from "../../types/user.types"
 import Avatar from "../userProfile/components/avatar/avatar"
 import image from "../../assets/image/100790.png"
 import wave from './../../assets/wave-min.svg'
+import { useNavigate } from "react-router-dom"
 
 export const ProfileCard = () => {
      // const {userInfo} = useContext(UserContext)
+     const navigate = useNavigate()
      const userInfo:Partial<IUser> = {
         matricule:"6969",
         firstname:"Lia",
@@ -15,7 +17,7 @@ export const ProfileCard = () => {
         profileUrl:image
     }
     return (
-        <div className="flex flex-col shadow-md rounded-lg w-11/12">
+        <div className="flex flex-col shadow-md rounded-lg w-11/12" onClick={()=>navigate(`/profile/novices/${userInfo.matricule}`)}>
             <div className="bg-gradient-to-b from-[#0061ff] to-[#60efff] h-40 w-full rounded-t-lg relative">
                 <img src={wave} className="absolute bottom-0 left-0 object-cover"/>
             </div>

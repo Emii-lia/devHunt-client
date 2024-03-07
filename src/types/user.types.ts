@@ -14,7 +14,14 @@ export interface INovice extends IUser {
     passions?:IPassion[]
 }
 export interface IMentor extends IUser {
-    successStory?:string
+    successStory?:ISuccessStory
+    specialisation?:ISpecialisation
+}
+export interface ISuccessStory {
+    description?: string
+    media?: string
+    reactionCount: number
+    createdAt:Date
 }
 export interface IUserContext {
     userInfo:INovice|IMentor
